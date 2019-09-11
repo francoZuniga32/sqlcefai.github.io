@@ -86,7 +86,8 @@ function armar() {
     var materia1 = document.getElementById("materia").value;
     var materia2 = document.getElementById("materia2").value;
     var correlativa = "('"+materia1+"','"+materia2+"'),";
-    document.getElementById("correlativaMuestra").value += correlativa; 
+    console.log(document.getElementById("correlativaMuestra").value);
+    // += correlativa; 
     //document.getElementById("correlativaMuestra").value = armado;
 }
 
