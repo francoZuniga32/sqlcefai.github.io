@@ -1,6 +1,7 @@
 var armado = " ";
 function seleccionAño(){
     var carrera = document.getElementById("carrera").value;
+    console.log(carrera);
     switch (carrera) {
         //en caso de ser un profesorado
         case "1":
@@ -57,8 +58,9 @@ function seleccionMateria(){
 }
 
 function seleccionMateria2(){
-    var años = document.getElementById("año").value;
+    var años = document.getElementById("año2").value;
     var carrera = document.getElementById("carrera").value;
+    console.log();
     //
     switch(carrera){
         case "2":
