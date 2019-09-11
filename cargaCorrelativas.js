@@ -1,4 +1,4 @@
-var armado = " ";
+var armado = document.getElementById("correlativaMuestra").value;
 function seleccionAño(){
     var carrera = document.getElementById("carrera").value;
     console.log(carrera);
