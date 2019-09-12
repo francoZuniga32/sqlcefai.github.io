@@ -22,6 +22,7 @@
     <link href="https://fonts.googleapis.com/css?family=Space+Mono&display=swap" rel="stylesheet">
 
     <link href="main.css" rel="stylesheet" type="text/css">
+    <script src="materiaSc.js"></script>
     <script src="bd.js"></script>
 </head>
 <body>
@@ -44,11 +45,14 @@
             </select>
         </div>
         <div class="form-group">
-            <button type="button" class="btn btn-light border" onclick="armar()">cargar</button>
+            <button type="button" class="btn btn-light border" onclick="armar();">cargar</button>
         </div>
         <div class="form-group">
-            <textarea class="form-control" id="correlativaMuestra" rows="3"> </textarea>
+            <textarea class="form-control" id="materiaMuestra" rows="3">INSERT INTO `materia` (`idMateria`, `nombre`, `ano`, `cuatrimestre`) VALUES</textarea>
         </div>
+        <button class="btn btn-light border" onclick="descargar();">Decargar
+            <span><img src="download.png" alt="" style="width: 10px;"></span>
+        </button>
     </form>
 </body>
 </html>
