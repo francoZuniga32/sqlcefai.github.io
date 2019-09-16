@@ -47,6 +47,9 @@ function seleccionMateria(){
         case "3":
             materiasLicenciaturaSistemas(años, "materia")
         break;
+        case "4":
+            materiasTUDW(años,"materia");
+        break;
         case "5":
             materiasTUASySL(años, "materia");
         break;
@@ -67,6 +70,9 @@ function seleccionMateria2(){
         break;
         case "3":
             materiasLicenciaturaSistemas(años, "materia2")
+        break;
+        case "4":
+            materiasTUDW(años, "materia2");
         break;
         case "5":
             materiasTUASySL(años, "materia2");
@@ -100,6 +106,23 @@ function materiasTUASySL(años, input){
         break;
         case "3":
             cargarMaterias(materiasTUASySL3,input);
+        break;
+        default:
+            borrar(input);
+        break;
+    }
+}
+
+function materiasTUDW(años, input) {
+    switch (años) {
+        case "1":
+            cargarMaterias(materiasTUDW1,input);
+        break;
+        case "2":
+            cargarMaterias(materiasTUDW2,input);
+        break;
+        case "3":
+            cargarMaterias(materiasTUDW3,input);
         break;
         default:
             borrar(input);
