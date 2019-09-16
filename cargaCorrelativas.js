@@ -1,6 +1,6 @@
+var armado = " ";
 function seleccionAño(){
     var carrera = document.getElementById("carrera").value;
-    console.log(carrera);
     switch (carrera) {
         //en caso de ser un profesorado
         case "1":
@@ -47,6 +47,9 @@ function seleccionMateria(){
         case "3":
             materiasLicenciaturaSistemas(años, "materia")
         break;
+        case "4":
+            materiasTUDW(años, "materia");
+        break;
         case "5":
             materiasTUASySL(años, "materia");
         break;
@@ -57,9 +60,8 @@ function seleccionMateria(){
 }
 
 function seleccionMateria2(){
-    var años = document.getElementById("año2").value;
+    var años = document.getElementById("año").value;
     var carrera = document.getElementById("carrera").value;
-    console.log();
     //
     switch(carrera){
         case "2":
@@ -67,6 +69,9 @@ function seleccionMateria2(){
         break;
         case "3":
             materiasLicenciaturaSistemas(años, "materia2")
+        break;
+        case "4":
+            materiasTUDW(años, "materia2");
         break;
         case "5":
             materiasTUASySL(años, "materia2");
@@ -85,9 +90,8 @@ function armar() {
     var materia1 = document.getElementById("materia").value;
     var materia2 = document.getElementById("materia2").value;
     var correlativa = "('"+materia1+"','"+materia2+"'),";
-    var armado = document.getElementById("correlativaMuestra").value;
     armado += correlativa; 
-    document.getElementById("correlativaMuestra").value = armado;
+    document.getElementById("correlativaMuestra").innerHTML = armado;
 }
 
 function materiasTUASySL(años, input){
@@ -103,6 +107,23 @@ function materiasTUASySL(años, input){
         break;
         default:
             borrar(input);
+        break;
+    }
+}
+
+function materiasTUDW(años, input) {
+    switch (años) {
+        case "1":
+            cargarMaterias(materiasTUDW1, input);
+        break;
+        case "2":
+            cargarMaterias(materiasTUDW2, input);
+        break;
+        case "3":
+            cargarMaterias(materiasTUDW3, input);
+        break;
+        default:
+            borrar("materia");
         break;
     }
 }
