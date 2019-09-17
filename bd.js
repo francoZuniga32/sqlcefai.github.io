@@ -31,6 +31,32 @@ var $materiasTUASySL3 = new Array(
     new Array("Aplicaciones Libres - 1","14"),new Array("Electiva - 1","15")
 );
 
+//$materias tecicatura en desarrollo web (TUDW)
+var $materiasTUDW1 = new Array(
+    new Array("-","0"),
+    new Array("Matematica General - 1","89"),
+    new Array("Introduccion a la Programacion - 1","90"),
+    new Array("Ingles Tecnico - 1","91"),
+    new Array("Programacion Estatica y Laboratorio Web - 2","92"),
+    new Array("Introduccion a la Programacion Orientada a Objetos - 2","93"),
+    new Array("Conceptos de Bases de Datos - 2","94")
+);
+
+var $materiasTUDW2 = new Array(
+    new Array("-","0"),
+    new Array("Programacion Web Dinamica - 1","95"),
+    new Array("Arquitectura y Seguridad de Computadoras - 1","96"),
+    new Array("Diseno Grafico - 1","97"),
+    new Array("Programacion Web Avanzada - 2","98"),
+    new Array("Analisis, Dise�o y Documentacion de Sistemas - 2","99")
+);
+
+var $materiasTUDW3 = new Array(
+    new Array("-","0"),
+    new Array("Framework e Interoperabilidad - 1","100"),
+    new Array("Trabajo Final Tecnicatura en Desarrollo Web - 1","101")
+);
+
 //$materias analista programador
 var $materiasAnalista1 = new Array(
     new Array("-","0"),
@@ -72,31 +98,7 @@ var $materiasAnalista3 = new Array(
     new Array("Gestion de Proyectos de Desarrollo Software - 2","44"),
     new Array("Gestion de Bases de Datos - 2","45")
 );
-//$materias tecicatura en desarrollo web (TUDW)
-var $materiasTUDW1 = new Array(
-    new Array("-","0"),
-    new Array("Matematica General - 1","89"),
-    new Array("Introduccion a la Programacion - 1","90"),
-    new Array("Ingles Tecnico - 1","91"),
-    new Array("Programacion Estatica y Laboratorio Web - 2","92"),
-    new Array("Introduccion a la Programacion Orientada a Objetos - 2","93"),
-    new Array("Conceptos de Bases de Datos - 2","94")
-);
 
-var $materiasTUDW2 = new Array(
-    new Array("-","0"),
-    new Array("Programacion Web Dinamica - 1","95"),
-    new Array("Arquitectura y Seguridad de Computadoras - 1","96"),
-    new Array("Diseno Grafico - 1","97"),
-    new Array("Programacion Web Avanzada - 2","98"),
-    new Array("Analisis, Diseño y Documentacion de Sistemas - 2","99")
-);
-
-var $materiasTUDW3 = new Array(
-    new Array("-","0"),
-    new Array("Framework e Interoperabilidad - 1","100"),
-    new Array("Trabajo Final Tecnicatura en Desarrollo Web - 1","101")
-);
 //$materias licenciatura en ciancias (LicCinComp)
 
 var $materiasLicCien4 = new Array(
