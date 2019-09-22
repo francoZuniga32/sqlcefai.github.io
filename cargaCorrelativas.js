@@ -64,11 +64,11 @@ function seleccionMateria(){
 function seleccionMateria2(){
     var años = document.getElementById("año2").value;
     var carrera = document.getElementById("carrera").value;
-    console.log();
+    console.log(años);
     //
     switch(carrera){
         case "1":
-            materiasProfesorado(años, "materias2");
+            materiasProfesorado(años, "materia2");
         break;
         case "2":
             materiasLicenciaturaCiencias(años,"materia2");
@@ -153,7 +153,7 @@ function materiasLicenciaturaSistemas(años, input){
             cargarMaterias(materiasLicSis5, input);
         break;
         default:
-                borrar("materia");
+            borrar(input);
         break;
     }
 }
@@ -176,7 +176,7 @@ function materiasLicenciaturaCiencias(años, input) {
             cargarMaterias(materiasLicCien5, input);
         break;
         default:
-                borrar("materia");
+            borrar(input);
         break;
     }
 }
@@ -196,17 +196,14 @@ function materiasProfesorado(años, input) {
             cargarMaterias(materiasProf4,input);
         break;
         default:
-                borrar("materia");
+            borrar(input);
         break;
     }
 }
 
 function cargaAños(arreglo, input){
     var select = document.getElementById(input);
-
     borrar(input);
-    borrar("materia");
-    borrar("materia2");
 
     for (var i = 0; i < arreglo.length; i++){
         var opt = document.createElement('option');
