@@ -1,0 +1,5 @@
+separar
+- los js en partes: todos en carpeta JS
+- las partes en comun separadas: BD, carga de materias, etc
+- los css en partes: todos los css en la carpeta css
+- 

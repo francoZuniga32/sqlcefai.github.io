@@ -24,10 +24,10 @@
     <link href="main.css" rel="stylesheet" type="text/css">
     <script src="cargaCorrelativas.js"></script>
     <script src="bd.js"></script>
-    <script src="descarga.js"></script>
 </head>
 <body>
     <div class="container">
+            <a class="btn btn-primary" href="index.html" role="button"><img src="back.svg" alt="" width="20px"></a></br>
         <form action="" class="">
             <div class="form-group">
                 <label for="carrera">Carrera</label>
@@ -67,11 +67,11 @@
             </div>
         </form>
         <div class="form-group">
-            <textarea class="form-control" id="muestra" rows="3">INSERT INTO `correlativa` (`necesaria`, `disponible`) VALUES</textarea>
+            <textarea class="form-control" id="correlativaMuestra" rows="3">INSERT INTO `correlativa` (`necesaria`, `disponible`) VALUES</textarea>
             <br>
-            <a href="" id="link" download="contenido.sql" class="btn btn-light">Decargar
+            <button class="btn btn-light border">Decargar
                 <span><img src="download.png" alt="" style="width: 10px;"></span>
-            </a>
+            </button>
         </div>
     </div>
     <div>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
