@@ -21,13 +21,97 @@
 
     <link href="https://fonts.googleapis.com/css?family=Space+Mono&display=swap" rel="stylesheet">
 
-    <link href="main.css" rel="stylesheet" type="text/css">
-    <script src="cargaCorrelativas.js"></script>
-    <script src="bd.js"></script>
+    <link href="CSS/main.css" rel="stylesheet" type="text/css">
+    <script src="JS/cargaCorrelativas.js"></script>
+    <script src="JS/bd.js"></script>
+    <script src="js/bootstrap-datetimepicker.min.js"></script>
+    <script src="css/bootstrap-datetimepicker.min.css"></script>
+    <script src="JS/horarios.js"></script>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 </head>
 <body>
     <div class="container">
-        
+        <a class="btn btn-primary" href="index.html" role="button"><img src="back.png" alt="" width="20px"></a></br>
+        <form action="" class="form">
+            <div class="form-group">
+                <label for="carrera">Carrera</label>
+                <select id="carrera" onchange="seleccionAño();" class="form-control" required >
+                    <option value="-">-</option>
+                    <option value="1">Profesorado de Informatica</option>
+                    <option value="2">Licenciatura en Ciencias de la Computación</option>
+                    <option value="3">Licenciatura en Sistemas de Información</option>
+                    <option value="4">Tecnicatura Universitaria en Desarrollo Web</option>
+                    <option value="5">Tecnicatura Universitaria en Administración de Sistemas y Software Libre</option>
+                </select>
+            </div>
+            <p class="border-bottom">materia</p>
+            <div class="form-group">
+                <label for="carrera">Año</label>
+                <select id="año"  onchange="seleccionMateria();" class="form-control">
+                    <option value="">-</option>
+                </select>
+                <label for="carrera">Materia</label>
+                <select id="materia" class="form-control" onchange="mostrarEnviar()">
+                    <option value="">-</option>
+                </select>
+                <label for="carrera">Dia</label>
+                <select id="dia" class="form-control" onchange="" required>
+                    <option value="">-</option>
+                    <option value="Lunes">Lunes</option>
+                    <option value="Martes">Martes</option>
+                    <option value="Miercoles">Miercoles</option>
+                    <option value="Jueves">Jueves</option>
+                    <option value="Viernes">Viernes</option>
+                    <option value="Sabado">Sabado</option>
+                </select>
+                </br>
+                <label for="carrera">tipo</label>
+                <select id="tipo" class="form-control" onchange="" required>
+                    <option value="">-</option>
+                    <option value="practica">practica</option>
+                    <option value="teoria">teoria</option>
+                </select>
+                <div class="well">
+                    <div id="datetimepicker3" class="input-append">
+                        <input data-format="hh:mm:ss" type="text" id="hora"></input>
+                        <span class="add-on">
+                            <i class="material-icons">
+                                calendar_today
+                            </i>
+                        </span>
+                    </div>
+                </div>
+                <script type="text/javascript">
+                $(function() {
+                    $('#datetimepicker3').datetimepicker({
+                    pickDate: false
+                    });
+                });
+                </script>
+                <br>
+                <div class="form-group">
+                    <button type="button" class="btn btn-light border" onclick="cargar();">cargar</button>
+                </div>
+            </div>
+        </form>
+        <table class="table" id="horarios">
+            <thead>
+                <tr>
+                    <th scope="col">dia</th>
+                    <th scope="col">hora</th>
+                    <th scope="col">materia</th>
+                    <th scope="col">tipo</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+        <div class="form-group">
+            <textarea class="form-control" id="horariosMuestra" rows="3">INSERT INTO `dicta` (`idMateria`, `dia`, `tipo`, `hora`) VALUES</textarea>
+        </div>
     </div>
     <div>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
 </body>
