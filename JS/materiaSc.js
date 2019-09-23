@@ -6,12 +6,12 @@ function armar(){
     var cuatrimestre = document.getElementById("cuatrimestre").value;
 
     var insertado = "(NULL,'"+materia+"',"+año+","+cuatrimestre+"),";
-    var cargado = document.getElementById("materiaMuestra").value;
+    var cargado = document.getElementById("muestra").value;
     cargado += insertado; 
-    document.getElementById("materiaMuestra").value = cargado;
+    document.getElementById("muestra").value = cargado;
 }
 
 function descargar(){
-    var valor = document.getElementById("materiaMuestra").value
+    var valor = document.getElementById("muestra").value
     console.log(valor.slice(,valor.length()));
 }

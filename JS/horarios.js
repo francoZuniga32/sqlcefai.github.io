@@ -1,6 +1,6 @@
 function cargar() {
     var valueMateria = document.getElementById("materia").value;
-    var valueTipo = document.getElementById("tipo").value;
+    var valueModulo = document.getElementById("modulo").value;
     var valueDia = document.getElementById("dia").value;
     var valueHora = document.getElementById("hora").value;
 
@@ -18,18 +18,18 @@ function cargar() {
     //creamos materia y le agregamos el nombre
     var materia = document.createElement('td');
     materia.innerHTML = valueMateria;
-    //cargamos el tipo
-    var tipo = document.createElement('td');
-    tipo.innerHTML = valueTipo;
+    //cargamos el modulo
+    var modulo = document.createElement('td');
+    modulo.innerHTML = valueModulo;
     //cargamos todo
     tr.appendChild(dia);
     tr.appendChild(hora);
     tr.appendChild(materia);
-    tr.appendChild(tipo);
+    tr.appendChild(modulo);
 
     //cargamos en el textarea
-    var sql = "('"+valueMateria+",'"+valueDia+"','"+valueTipo+"','"+valueHora+"'),";
-    var cargado = document.getElementById("horariosMuestra").value;
+    var sql = "('"+valueMateria+",'"+valueDia+"','"+valueModulo+"','"+valueHora+"'),";
+    var cargado = document.getElementById("muestra").value;
     cargado += sql; 
-    document.getElementById("horariosMuestra").value = cargado;
+    document.getElementById("muestra").value = cargado;
 }

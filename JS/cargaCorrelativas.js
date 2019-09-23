@@ -96,9 +96,9 @@ function armar() {
     var materia1 = document.getElementById("materia").value;
     var materia2 = document.getElementById("materia2").value;
     var correlativa = "('"+materia1+"','"+materia2+"'),";
-    var armado = document.getElementById("correlativaMuestra").value;
+    var armado = document.getElementById("muestra").value;
     armado += correlativa; 
-    document.getElementById("correlativaMuestra").value = armado;
+    document.getElementById("muestra").value = armado;
 }
 
 function materiasTUASySL(años, input){

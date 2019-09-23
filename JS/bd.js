@@ -34,21 +34,21 @@ var materiasTUASySL3 = new Array(
 //$materias tecicatura en desarrollo web (TUDW)
 var $materiasTUDW1 = new Array(
     new Array("-","0"),
-    new Array("Matematica General - 1","89"),
-    new Array("Introduccion a la Programacion - 1","90"),
-    new Array("Ingles Tecnico - 1","91"),
-    new Array("Programacion Estatica y Laboratorio Web - 2","92"),
-    new Array("Introduccion a la Programacion Orientada a Objetos - 2","93"),
+    new Array("Matemática General - 1","89"),
+    new Array("Introducción a la Programación - 1","90"),
+    new Array("Inglés Técnico - 1","91"),
+    new Array("Progrmación Estática y Laboratorio Web - 2","92"),
+    new Array("Introducción a la Programación Orientada a Objetos - 2","93"),
     new Array("Conceptos de Bases de Datos - 2","94")
 );
 
 var materiasTUDW2 = new Array(
     new Array("-","0"),
-    new Array("Programacion Web Dinamica - 1","95"),
+    new Array("Programación Web Dinámica - 1","95"),
     new Array("Arquitectura y Seguridad de Computadoras - 1","96"),
-    new Array("Diseno Grafico - 1","97"),
-    new Array("Programacion Web Avanzada - 2","98"),
-    new Array("Analisis, Dise�o y Documentacion de Sistemas - 2","99")
+    new Array("Diseno Gráfico - 1","97"),
+    new Array("Programación Web Avanzada - 2","98"),
+    new Array("Análisis, Diseño y Documentación de Sistemas - 2","99")
 );
 
 var materiasTUDW3 = new Array(
@@ -60,43 +60,43 @@ var materiasTUDW3 = new Array(
 //$materias analista programador
 var materiasAnalista1 = new Array(
     new Array("-","0"),
-    new Array("Elementos de Algebra - 1","16"),
-    new Array("Resolucion de Problemas y Algoritmos - 1","17"),
-    new Array("Modelos y Sistemas de Informacion - 1","18"),
-    new Array("Introduccion a la Computacion - 1","19"),
+    new Array("Elementos de Álgebra - 1","16"),
+    new Array("Resolución de Problemas y Algoritmos - 1","17"),
+    new Array("Modelos y Sistemas de Información - 1","18"),
+    new Array("Introducción a la Computación - 1","19"),
     new Array("Desarrollo de Algoritmos - 2","20"),
-    new Array("Elementos de Algebra Lineal - 2","21"),
-    new Array("Elementos de Teoria de la Computacion - 2","22"),
+    new Array("Elementos de Álgebra Lineal - 2","21"),
+    new Array("Elementos de Teoría de la Computación - 2","22"),
     new Array("Modelado de Datos - 2","23")
 );
 var materiasAnalista2 = new Array(
     new Array("-","0"),
-    new Array("Calculo Diferencial e Integral - 1","24"),
-    new Array("Programacion Orientada a Objetos - 1","25"),
+    new Array("Cálculo Diferencial e Integral - 1","24"),
+    new Array("Programación Orientada a Objetos - 1","25"),
     new Array("Estructuras de Datos - 1","26"),
-    new Array("Teoria de la Computacion I - 1","27"),
-    new Array("Ingles Tecnico I - 1","28"),
-    new Array("Metodos Computacionales para el Calculo - 2","29"),
-    new Array("Programacion Concurrente - 2","30"),
-    new Array("Teoria de la Computacion II - 2","31"),
-    new Array("Arquitecturas y Organizacion de Computadoras I - 2","32"),
-    new Array("Ingenieria de Requerimientos - 2","33"),
-    new Array("Ingles Tecnico II - 2","34")
+    new Array("Teoría de la Computación I - 1","27"),
+    new Array("Inglés Técnico I - 1","28"),
+    new Array("Métodos Computacionales para el Cálculo - 2","29"),
+    new Array("Programación Concurrente - 2","30"),
+    new Array("Teoría de la Computación II - 2","31"),
+    new Array("Arquitecturas y Organización de Computadoras I - 2","32"),
+    new Array("Ingeniería de Requerimientos - 2","33"),
+    new Array("Inglés Técnico II - 2","34")
 );
 
 var materiasAnalista3 = new Array(
     new Array("-","0"),
-    new Array("Probabilidad y Estadistica - 1","35"),
-    new Array("Principios de Lenguajes de Programacion - 1","36"),
+    new Array("Probabilidad y Estadística - 1","35"),
+    new Array("Principios de Lenguajes de Programación - 1","36"),
     new Array("Sistemas Operativos I - 1","37"),
     new Array("Diseño de Bases de Datos - 1","38"),
     new Array("Arquitecturas de Software - 1","39"),
-    new Array("Analisis de Algoritmos - 2","40"),
-    new Array("Laboratorio de Programacion - 2","41"),
-    new Array("Logica para Ciencias de la Computacion - 2","42"),
+    new Array("Análisis de Algoritmos - 2","40"),
+    new Array("Laboratorio de Programación - 2","41"),
+    new Array("Lógica para Ciencias de la Computación - 2","42"),
     new Array("Redes de Computadoras I - 2","43"),
-    new Array("Gestion de Proyectos de Desarrollo Software - 2","44"),
-    new Array("Gestion de Bases de Datos - 2","45")
+    new Array("Gestión de Proyectos de Desarrollo Software - 2","44"),
+    new Array("Gestión de Bases de Datos - 2","45")
 );
 
 //$materias licenciatura en ciancias (LicCinComp)
@@ -107,25 +107,25 @@ var materiasLicCien4 = new Array(
     new Array("Inteligencia Artificial - 2","52"),
     new Array("Lenguajes Declarativos - 1","55"),
     new Array("Complejidad Computacional - 1","56"),
-    new Array("Especificacion de Software - 1","57"),
+    new Array("Especificación de Software - 1","57"),
     new Array("Diseño de Algoritmos - 2","58"),
-    new Array("Conceptos Avanzados de Lenguajes de Programacion - 2","59"),
-    new Array("Especificacion con Metodos Formales - 2","60"),
+    new Array("Conceptos Avanzados de Lenguajes de Programación - 2","59"),
+    new Array("Especificación con Métodos Formales - 2","60"),
     new Array("Aspectos Profesionales y Sociales - 2","61")
 );
 
 var materiasLicCien5 = new Array(
     new Array("-","0"),
     new Array("Sistemas Inteligentes - 1","53"),
-    new Array("Laboratorio de Programacion Distribuida - 1","54"),
+    new Array("Laboratorio de Programación Distribuida - 1","54"),
     new Array("Agentes Inteligentes para la Web - 1","62"),
     new Array("Diseño de Compiladores e Interpretes - 1","63"),
     new Array("Electiva I - 1","64"),
     new Array("Trabajo de Tesis - 1","65"),
     new Array("Laboratorio de Compiladores e Interpretes - 2","66"),
     new Array("Laboratorio de Inteligencia Artificial - 2","67"),
-    new Array("Tecnicas para Mineria de Datos - 2","68"),
-    new Array("Electiva II Segun Electiva - 2","69"),
+    new Array("Técnicas para Minería de Datos - 2","68"),
+    new Array("Electiva II Según Electiva - 2","69"),
     new Array("Trabajo de Tesis - 2","70")
 );
 
@@ -133,31 +133,31 @@ var materiasLicCien5 = new Array(
 var materiasLicSis4 = new Array(
     new Array("-","0"),
     new Array("Sistemas Paralelos - 1","51"),
-    new Array("Inteligencia Artificial LicCien - 2","52"),
-    new Array("Planificacion y Control de Proyectos - 1","71"),
-    new Array("Sistemas de Informacion I - 1","72"),
+    new Array("Inteligencia Artificial - 2","52"),
+    new Array("Planificación y Control de Proyectos - 1","71"),
+    new Array("Sistemas de Información I - 1","72"),
     new Array("Modelado de Procesos de Negocios - 1","73"),
     new Array("Especificacion de Requerimientos - 1","74"),
-    new Array("Especificacion de Diseño de Software - 2","75"),
-    new Array("Deposito y Mineria de Datos - 2","76"),
-    new Array("Sistema de Informacion II - 2","77"),
+    new Array("Especificación de Diseño de Software - 2","75"),
+    new Array("Depósito y Minería de Datos - 2","76"),
+    new Array("Sistema de Información II - 2","77"),
     new Array("Laboratorio de Bases de Datos - 2","78")
 );
 
 var materiasLicSis5 = new Array(
     new Array("-","0"),
     new Array("Sistemas Inteligentes - 1","53"),
-    new Array("Laboratorio de Programacion Distribuida - 1","54"),
-    new Array("Auditoria de Sistemas de Informacion - 1","79"),
-    new Array("Verificacion y Validacion de Software - 1","80"),
+    new Array("Laboratorio de Programación Distribuida - 1","54"),
+    new Array("Auditoría de Sistemas de Información - 1","79"),
+    new Array("Verificación y Validación de Software - 1","80"),
     new Array("Electiva I - 1","81"),
-    new Array("Trabajo Tesis I LicSis - 1","82"),
-    new Array("Sistemas de Informacion para la Web - 2","83"),
-    new Array("Aspectos Profecionales y Sociales - 2","84"),
-    new Array("Reingenieria de Software y Procesos - 2","85"),
-    new Array("Construccion y Validacion de Software - 2","86"),
+    new Array("Trabajo Tesis I - 1","82"),
+    new Array("Sistemas de Información para la Web - 2","83"),
+    new Array("Aspectos Profesionales y Sociales - 2","84"),
+    new Array("Reingeniería de Software y Procesos - 2","85"),
+    new Array("Construcción y Validación de Software - 2","86"),
     new Array("Electiva II - 2","87"),
-    new Array("Trabajo Tesis II LicSis - 2","88")
+    new Array("Trabajo Tesis II - 2","88")
 );
 
 //$materias profesorado informatica (ProfInfor)
@@ -165,51 +165,51 @@ var materiasLicSis5 = new Array(
 
 var materiasProf1 = new Array(
     new Array("-","0"),
-    new Array("Pedagogia - 1","102"),
-    new Array("Elementos de Algebra - 1","16"),
-    new Array("Resolucion de Problemas y Algoritmos - 1","17"),
-    new Array("Modelos y Sistemas de Informacion - 1","18"),
-    new Array("Introduccion a la Computacion - 1","19"),
-    new Array("Psicologia I - 2","103"),
+    new Array("Pedagogía - 1","102"),
+    new Array("Elementos de Álgebra - 1","16"),
+    new Array("Resolución de Problemas y Algoritmos - 1","17"),
+    new Array("Modelos y Sistemas de Información - 1","18"),
+    new Array("Introducción a la Computación - 1","19"),
+    new Array("Psicología I - 2","103"),
     new Array("Desarrollo de Algoritmos - 2","20"),
-    new Array("Elementos de Teoria de la Computacion - 2","22"),
+    new Array("Elementos de Teoria de la Computación - 2","22"),
     new Array("Modelado de Datos - 2","23")
 );
 
 var materiasProf2 = new Array(
     new Array("-","0"),
-    new Array("Calculo Diferencial e Integral - 1","24"),
-    new Array("Programacion Orientada a Objetos - 1","25"),
+    new Array("Cálculo Diferencial e Integral - 1","24"),
+    new Array("Programación Orientada a Objetos - 1","25"),
     new Array("Estructuras de Datos - 1","26"),
-    new Array("Teoria de la Computacion I - 1","27"),
-    new Array("Ingles Tecnico I - 1","28"),
-    new Array("Didactica General - 2","104"),
-    new Array("Programacion Concurrente - 2","30"),
-    new Array("Teoria de la Computacion II - 2","31"),
-    new Array("Arquitecturas y Organizacion de Computadoras I - 2","32"),
-    new Array("Ingenieria de Requerimientos - 2","33"),
-    new Array("Ingles Tecnico II - 2","34")
+    new Array("Teoría de la Computación I - 1","27"),
+    new Array("Inglés Técnico I - 1","28"),
+    new Array("Didáctica General - 2","104"),
+    new Array("Programación Concurrente - 2","30"),
+    new Array("Teoría de la Computación II - 2","31"),
+    new Array("Arquitecturas y Organización de Computadoras I - 2","32"),
+    new Array("Ingeniería de Requerimientos - 2","33"),
+    new Array("Inglés Técnico II - 2","34")
 );
 
 var materiasProf3 = new Array(
     new Array("-","0"),
-    new Array("Tecnologias de la Informacion y Comunicacion en la Educacion - 1","106"),
-    new Array("Psicologia II - 1","107"),
+    new Array("Tecnologías de la Información y Comunicación en la Educación - 1","106"),
+    new Array("Psicología II - 1","107"),
     new Array("Sistemas Operativos I - 1","37"),
     new Array("Arquitecturas de Software - 1","39"),
-    new Array("Metodos Computacionales para el Calculo - 2","105"),
-    new Array("Diseño de Sistemas Informaticos para Educacion - 2","115"),
-    new Array("Laboratorio de Tecnologias de la Informacion y Comunicacion en la Educacion - 2","108"),
+    new Array("Métodos Computacionales para el Cálculo - 2","105"),
+    new Array("Diseño de Sistemas Informáticos para Educación - 2","115"),
+    new Array("Laboratorio de Tecnologías de la Información y Comunicación en la Educación - 2","108"),
     new Array("Redes de Computadoras I - 2","43"),
 );
 
 var materiasProf4 = new Array(
     new Array("-","0"),
-    new Array("Probabilidad y Estadistica - 1","109"),
-    new Array("Laboratorio de Sistemas Informaticos para Educacion - 1","110"),
-    new Array("Didactica Especifica - 1","111"),
-    new Array("Politica Educacional Argentina - 1","112"),
-    new Array("Topicos Avanzados en Ciencias de la Computacion - 2","113"),
+    new Array("Probabilidad y Estadística - 1","109"),
+    new Array("Laboratorio de Sistemas Informáticos para Educación - 1","110"),
+    new Array("Didáctica Específica - 1","111"),
+    new Array("Política Educacional Argentina - 1","112"),
+    new Array("Tópicos Avanzados en Ciencias de la Computación - 2","113"),
     new Array("Residencia - 2","114"),
     new Array("Aspectos Profesionales y Sociales - 2","61"),
 );

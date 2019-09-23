@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>correlativa</title>
+    <title>Horarios</title>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,6 +27,8 @@
     <script src="js/bootstrap-datetimepicker.min.js"></script>
     <script src="css/bootstrap-datetimepicker.min.css"></script>
     <script src="JS/horarios.js"></script>
+    <script src="JS/descarga.js"></script>
+    <script src="JS/materiaSc.js"></script>
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
@@ -39,46 +41,47 @@
                 <label for="carrera">Carrera</label>
                 <select id="carrera" onchange="seleccionAño();" class="form-control" required >
                     <option value="-">-</option>
-                    <option value="1">Profesorado de Informatica</option>
+                    <option value="1">Profesorado de Informática</option>
                     <option value="2">Licenciatura en Ciencias de la Computación</option>
                     <option value="3">Licenciatura en Sistemas de Información</option>
                     <option value="4">Tecnicatura Universitaria en Desarrollo Web</option>
                     <option value="5">Tecnicatura Universitaria en Administración de Sistemas y Software Libre</option>
                 </select>
             </div>
-            <p class="border-bottom">materia</p>
+            <p class="border-bottom">Materias</p>
             <div class="form-group">
                 <label for="carrera">Año</label>
                 <select id="año"  onchange="seleccionMateria();" class="form-control">
                     <option value="">-</option>
                 </select>
-                <label for="carrera">Materia</label>
+                <label for="carrera">Materias</label>
                 <select id="materia" class="form-control" onchange="mostrarEnviar()">
                     <option value="">-</option>
                 </select>
-                <label for="carrera">Dia</label>
+                <label for="carrera">Día</label>
                 <select id="dia" class="form-control" onchange="" required>
                     <option value="">-</option>
                     <option value="Lunes">Lunes</option>
                     <option value="Martes">Martes</option>
-                    <option value="Miercoles">Miercoles</option>
+                    <option value="Miercoles">Miércoles</option>
                     <option value="Jueves">Jueves</option>
                     <option value="Viernes">Viernes</option>
                     <option value="Sabado">Sabado</option>
                 </select>
                 </br>
-                <label for="carrera">tipo</label>
-                <select id="tipo" class="form-control" onchange="" required>
+                <label for="carrera">Módulo</label>
+                <select id="modulo" class="form-control" onchange="" required>
                     <option value="">-</option>
-                    <option value="practica">practica</option>
-                    <option value="teoria">teoria</option>
+                    <option value="practica">Práctica</option>
+                    <option value="teoria">Teoría</option>
                 </select>
+                <br>
                 <div class="well">
                     <div id="datetimepicker3" class="input-append">
                         <input data-format="hh:mm:ss" type="text" id="hora"></input>
                         <span class="add-on">
                             <i class="material-icons">
-                                calendar_today
+                                alarm
                             </i>
                         </span>
                     </div>
@@ -92,7 +95,7 @@
                 </script>
                 <br>
                 <div class="form-group">
-                    <button type="button" class="btn btn-light border" onclick="cargar();">cargar</button>
+                    <button type="button" class="btn btn-light border" onclick="cargar();">Cargar</button>
                 </div>
             </div>
         </form>
@@ -102,7 +105,7 @@
                     <th scope="col">dia</th>
                     <th scope="col">hora</th>
                     <th scope="col">materia</th>
-                    <th scope="col">tipo</th>
+                    <th scope="col">modulo</th>
                 </tr>
             </thead>
             <tbody>
@@ -110,8 +113,11 @@
             </tbody>
         </table>
         <div class="form-group">
-            <textarea class="form-control" id="horariosMuestra" rows="3">INSERT INTO `dicta` (`idMateria`, `dia`, `tipo`, `hora`) VALUES</textarea>
+            <textarea class="form-control" id="muestra" rows="3">INSERT INTO `dicta` (`idMateria`, `dia`, `modulo`, `hora`) VALUES</textarea>
         </div>
+        <button class="btn btn-light border" onclick="saveTextAsFile(muestra.value, 'horarios.sql');">Descarga
+            <span><img src="download.png" alt="" style="width: 10px;"></span>
+        </button>
     </div>
     <div>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
 </body>

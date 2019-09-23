@@ -24,6 +24,7 @@
     <link href="CSS/main.css" rel="stylesheet" type="text/css">
     <script src="JS/cargaCorrelativas.js"></script>
     <script src="JS/bd.js"></script>
+    <script src="JS/descarga.js"></script>
 </head>
 <body>
     <div class="container">
@@ -33,14 +34,14 @@
                 <label for="carrera">Carrera</label>
                 <select id="carrera" onchange="seleccionAño();" class="form-control" >
                     <option value="-">-</option>
-                    <option value="1">Profesorado de Informatica</option>
+                    <option value="1">Profesorado de Informática</option>
                     <option value="2">Licenciatura en Ciencias de la Computación</option>
                     <option value="3">Licenciatura en Sistemas de Información</option>
                     <option value="4">Tecnicatura Universitaria en Desarrollo Web</option>
                     <option value="5">Tecnicatura Universitaria en Administración de Sistemas y Software Libre</option>
                 </select>
             </div>
-            <p class="border-bottom">materia</p>
+            <p class="border-bottom">Materia</p>
             <div class="form-group">
                 <label for="carrera">Año</label>
                 <select id="año"  onchange="seleccionMateria();" class="form-control">
@@ -51,7 +52,7 @@
                     <option value="">-</option>
                 </select>
             </div>
-            <p class="border-bottom">correlativa</p>
+            <p class="border-bottom">Correlativas</p>
             <div class="form-group">
                 <label for="carrera">Año</label>
                 <select id="año2"  onchange="seleccionMateria2();" class="form-control">
@@ -63,13 +64,13 @@
                 </select>
             </div>
             <div class="form-group" id="send">
-                <button type="button" class="btn btn-light border" onclick="armar()">cargar</button>
+                <button type="button" class="btn btn-light border" onclick="armar()">Cargar</button>
             </div>
         </form>
         <div class="form-group">
-            <textarea class="form-control" id="correlativaMuestra" rows="3">INSERT INTO `correlativa` (`necesaria`, `disponible`) VALUES</textarea>
+            <textarea class="form-control" id="muestra" rows="3">INSERT INTO `correlativa` (`necesaria`, `disponible`) VALUES</textarea>
             <br>
-            <button class="btn btn-light border">Decargar
+            <button class="btn btn-light border" onclick="saveTextAsFile(muestra.value, 'correlativas.sql');">Descarga
                 <span><img src="download.png" alt="" style="width: 10px;"></span>
             </button>
         </div>
