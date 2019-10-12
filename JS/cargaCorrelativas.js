@@ -95,7 +95,7 @@ function mostrarEnviar(){
 function armar() {
     var materia1 = document.getElementById("materia").value;
     var materia2 = document.getElementById("materia2").value;
-    var correlativa = "('"+materia1+"','"+materia2+"'),";
+    var correlativa = "('"+materia2+"','"+materia1+"'),";
     var armado = document.getElementById("muestra").value;
     armado += correlativa; 
     document.getElementById("muestra").value = armado;
