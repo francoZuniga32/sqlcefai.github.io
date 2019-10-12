@@ -21,6 +21,8 @@
 
     <link href="https://fonts.googleapis.com/css?family=Space+Mono&display=swap" rel="stylesheet">
 
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
     <link href="CSS/main.css" rel="stylesheet" type="text/css">
     <script src="JS/cargaCorrelativas.js"></script>
     <script src="JS/bd.js"></script>
@@ -75,6 +77,13 @@
             </button>
         </div>
     </div>
+    <div class="md-form">
+        <input placeholder="Selected time" type="text" id="input_starttime" class="form-control timepicker">
+        <label for="input_starttime">Dark theme</label>
+      </div>
+      <script>
+        $('#input_starttime').pickatime({});
+        </script>
     <div>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
 </body>
 </html>
