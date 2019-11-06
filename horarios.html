@@ -63,6 +63,12 @@
                 <select id="materia" class="form-control" onchange="mostrarEnviar()">
                     <option value="">-</option>
                 </select>
+                <label for="carrera">Cuatrimestre</label>
+                <select id="cuatrimestre" class="form-control" onchange="" required>
+                    <option value="">-</option>
+                    <option value="1">1° Primero</option>
+                    <option value="2">2° Segundo</option>
+                </select>
                 <label for="carrera">Día</label>
                 <select id="dia" class="form-control" onchange="" required>
                     <option value="">-</option>
@@ -98,13 +104,6 @@
                 });
                 // Time Picker Initialization
                 </script>
-                <br>
-                <label for="carrera">Cuatrimestre</label>
-                <select id="cuatrimestre" class="form-control" onchange="" required>
-                    <option value="">-</option>
-                    <option value="1">1° Primero</option>
-                    <option value="2">2° Segundo</option>
-                </select>
                 <br>
                 <div class="form-group">
                     <button type="button" class="btn btn-light border" onclick="cargar();">Cargar</button>

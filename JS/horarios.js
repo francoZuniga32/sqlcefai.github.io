@@ -40,6 +40,7 @@ function cargar() {
     tr.appendChild(modulo);
     tr.appendChild(cuatrimestre);
     
+    console.log(valueCuatrimestre);
     //cargamos en el textarea
     var sql = "('"+valueMateria+",'"+valueAula+"','"+valueDia+"','"+valueModulo+"','"+valueHora+"', '"+valueCuatrimestre+"', 'normal'),";
     var cargado = document.getElementById("muestra").value;
