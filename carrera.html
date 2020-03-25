@@ -21,7 +21,7 @@
 
     <link href="https://fonts.googleapis.com/css?family=Space+Mono&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    
+
     <link href="CSS/main.css" rel="stylesheet" type="text/css">
     <script src="JS/materiaSc.js"></script>
     <script src="JS/bd.js"></script>
@@ -31,26 +31,17 @@
             <a class="btn btn-primary" href="index.html" role="button"><img src="back.png" alt="" width="20px"></a></br>
         <div class="form-group">
             <label for="materia">Materia</label>
-            <input class="form-control" type="text" placeholder="Nombre Carrera" id="materia">
-            <label for="año">Año</label>
-            <select id="año" class="form-control">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-            </select>
+            <input class="form-control" type="text" placeholder="Nombre Carrera" id="carrera">
+            <label for="año">Plan</label>
+            <input class="form-control" type="text" id="plan" placeholder="Plan">
             <label for="cuatrimestre">Cuatrimestre</label>
-            <select id="cuatrimestre" class="form-control">
-                <option value="1">1</option>
-                <option value="2">2</option>
-            </select>
+            <input class="form-control" type="text" id="duracion" placeholder="Duracion">
         </div>
         <div class="form-group">
-            <button type="button" class="btn btn-light border" onclick="armar();">cargar</button>
+            <button type="button" class="btn btn-light border" onclick="armarCarrera()">cargar</button>
         </div>
         <div class="form-group">
-            <textarea class="form-control" id="muestra" rows="3">INSERT INTO `materia` (`idMateria`, `nombre`, `ano`, `cuatrimestre`) VALUES</textarea>
+            <textarea class="form-control" id="muestra" rows="3">INSERT INTO 'carrera' ('idCarrera', 'nombre', 'plan', 'duracion') VALUES</textarea>
         </div>
         <button class="btn btn-light border" onclick="saveTextAsFile(muestra.value, 'materias.sql');">descargar
             <span><img src="download.png" alt="" style="width: 10px;"></span>

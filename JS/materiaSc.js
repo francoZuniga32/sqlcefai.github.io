@@ -1,17 +1,28 @@
 
 function armar(){
     console.log("hola mundo");
-    var materia = document.getElementById("materia").value;
-    var año = document.getElementById("año").value;
-    var cuatrimestre = document.getElementById("cuatrimestre").value;
+    var materia = $("#materia").val();
+    var año = $("#año").val();
+    var cuatrimestre = $("#cuatrimestre").val();
 
     var insertado = "(NULL,'"+materia+"',"+año+","+cuatrimestre+"),";
-    var cargado = document.getElementById("muestra").value;
+    var cargado = $("#muestra").val();
     cargado += insertado; 
-    document.getElementById("muestra").value = cargado;
+    $("#muestra").val(cargado);
+}
+
+function armarCarrera(){
+    var carrera = $("#carrera").val();
+    var año = $("#plan").val();
+    var duracion = $("#duracion").val();
+
+    var insertado = "(NULL,'"+carrera+"',"+año+","+duracion+"),";
+    var cargado = $("#muestra").val();
+    cargado += insertado; 
+    $("#muestra").val(cargado);
 }
 
 function descargar(){
     var valor = document.getElementById("muestra").value
-    console.log(valor.slice(,valor.length()));
+    console.log(valor.slice(valor.length()));
 }
