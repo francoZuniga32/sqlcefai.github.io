@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+</head>
+<body>
+    <div id="root">
+        <div class="row">
+            <form class="col-sm">
+                <div class="mb-3">
+                    <select class="form-control" name="" class="d-block" ref="carreras" v-on:change="cargarAnios()">
+                        <option value="-">-</option>
+                        <option v-for="carrera in carreras" v-bind:value="carrera.idCarrera">{{ carrera.nombre }}</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <select class="form-control" name="" v-if="anios" ref="anios" v-on:change="cargarMaterias()">
+                        <option value="-">-</option>
+                        <option v-for="i in duracion" v-bind:value="i">{{ i }}</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <select class="form-control" name="" v-if="materias" ref="materias" v-on:change="addDisplay()">
+                        <option value="-">-</option>
+                        <option v-for="materia in materias"  v-bind:value="materia.idMateria" :disabled="desabilitado.includes(materia.idMateria)">{{ materia.nombre }}-{{ materia.cuatrimestre }}</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="aula">Aula</label>
+                    <input class="form-control" v-model="aula" type="text" name="aula" id="aula">
+                </div>
+                <div class="mb-3">
+                    <label for="modulo">Modulo</label>
+                    <input type="text" v-model="modulo" name="modulo" id="modulo" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label for="modulo">Hora Inicio</label>
+                    <vue-timepicker></vue-timepicker>
+                </div>
+                <div class="mb-3">
+                    <label for="modulo">Hora Fin</label>
+                    <input type="text" v-model="modulo" name="modulo" id="modulo" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label for="modulo">Cuatrimestre</label>
+                    <input type="text" v-model="modulo" name="modulo" id="modulo" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <button class="btn btn-primary">Añadir</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="js/data.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue2-timepicker@1.1.4/dist/VueTimepicker.umd.min.js"></script>
+    <script>
+    var root = new Vue({
+        el: '#root',
+        components: { VueTimepicker },
+        data: {
+            datos: data,
+            carreras: data.carreras,
+            duracion: 0,
+            materias: {},
+            anios: false,
+            materias: false,
+            aula: null,
+            dia: null,
+            modulo: null,
+            horainicio: null,
+            horafin: null,
+            cuatrimestre: null,
+            estado: null,
+            desabilitado: [],
+            info: null
+        },
+        methods: {
+            cargarAnios: function () {
+                this.materias = false;
+                this.anios = false;
+                this.duracion = 0;
+
+                var idcarrera = this.$refs.carreras.value;
+                this.duracion = this.carreras[parseInt(idcarrera) - 1].duracion;
+                this.anios = true;
+            },
+            cargarMaterias: function () {
+                var idcarrera = this.$refs.carreras.value;
+                var anio = this.$refs.anios.value;
+
+                this.materias = data.materias[parseInt(idcarrera) - 1][parseInt(anio) - 1];
+            },
+            addDisplay: function (){
+                this.add = true;
+            },
+            consultar: function () {
+                var idmateria = this.$refs.materias.value;
+                //llamada a la funcion para poder trar los datos
+                if(!this.desabilitado.includes(idmateria)){
+                    this.desabilitado.push(idmateria);
+                    axios.get(`/horarios/horarios/materia/${idmateria}`).then((response) => {
+                        response.data.forEach(element => {
+                            this.horario.push(element);
+                        })
+                        this.clasificar(response.data);
+                    });
+                }
+            }
+        }
+    });
+    </script>
+</body>
+</html>
