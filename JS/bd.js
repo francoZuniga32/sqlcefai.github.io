@@ -32,7 +32,7 @@ var materiasTUASySL3 = new Array(
 );
 
 //$materias tecicatura en desarrollo web (TUDW)
-var $materiasTUDW1 = new Array(
+var materiasTUDW1 = new Array(
     new Array("-","0"),
     new Array("Matemática General - 1","89"),
     new Array("Introducción a la Programación - 1","90"),
