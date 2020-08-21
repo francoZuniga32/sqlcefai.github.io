@@ -47,7 +47,7 @@ function cargar() {
     
     console.log(valueCuatrimestre);
     //cargamos en el textarea
-    var sql = "('"+valueMateria+",'"+valueAula+"','"+valueDia+"','"+valueModulo+"','"+valueHoraInicio+"', '"+valueHoraFin+"', '"+valueCuatrimestre+"', 'normal'),";
+    var sql = `('${valueMateria}','${valueAula}','${valueDia}','${valueModulo}','${valueHoraInicio}', '${valueHoraFin}', '${valueCuatrimestre}', 'normal'),)`;
     var cargado = document.getElementById("muestra").value;
     cargado += sql; 
     document.getElementById("muestra").value = cargado;
